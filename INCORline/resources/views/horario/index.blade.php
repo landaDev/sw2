@@ -168,7 +168,7 @@
                       <div class="text-sm text-gray-500">
                         AM
                       </div>
-                      <input type="text" value="{{$horario->hora}}" hidden>
+                      {{-- <input type="text" value="{{$horario->hora}}" hidden> --}}
                     </div>
                   </div>
                 </td>
@@ -178,10 +178,10 @@
                         type="checkbox"
                         class="rounded border-blue-900 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       name="hora[]"
-                      value="{{$horario->idhorario}}:{{$horario->iddia}}"
+                      value=""
                       {{-- checked="{{($horario->estado =='activo'?'checked':'')}}" --}}
                       />
-                      {{$horario->idhorario}}:{{$horario->iddia}}
+                      
                       {{-- <input type="text" value="{{$horario->idmedicohorario}}"> --}}
                   </div>
                 </td>
@@ -191,10 +191,10 @@
                         type="checkbox"
                         class="rounded border-blue-900 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       name="hora[]"
-                      value="{{$horario->idhorario}}:{{$horario->iddia}}"
+                      value=""
                       {{-- checked="{{($horario->estado =='activo'?'checked':'')}}" --}}
                       />
-                      {{$horario->idhorario}}:{{$horario->iddia}}
+                      
                       {{-- <input type="text" value="{{$horario->idmedicohorario}}"> --}}
                   </div>
                 </td>
@@ -205,10 +205,10 @@
                         type="checkbox"
                         class="rounded border-blue-900 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       name="hora[]"
-                      value="{{$horario->idhorario}}:{{$horario->iddia}}"
+                      value=""
                       {{-- checked="{{($horario->estado =='activo'?'checked':'')}}" --}}
                       />
-                      {{$horario->idhorario}}:{{$horario->iddia}}
+                      
                       {{-- <input type="text" value="{{$horario->idmedicohorario}}"> --}}
                   </div>
                 </td>
@@ -219,10 +219,10 @@
                         type="checkbox"
                         class="rounded border-blue-900 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       name="hora[]"
-                      value="{{$horario->idhorario}}:{{$horario->iddia}}"
+                      value=""
                       {{-- checked="{{($horario->estado =='activo'?'checked':'')}}" --}}
                       />
-                      {{$horario->idhorario}}:{{$horario->iddia}}
+                      
                       {{-- <input type="text" value="{{$horario->idmedicohorario}}"> --}}
                   </div>
                 </td>
@@ -232,10 +232,10 @@
                         type="checkbox"
                         class="rounded border-blue-900 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       name="hora[]"
-                      value="{{$horario->idhorario}}:{{$horario->iddia}}"
+                      value=""
                       {{-- checked="{{($horario->estado =='activo'?'checked':'')}}" --}}
                       />
-                      {{$horario->idhorario}}:{{$horario->iddia}}
+                      
                       {{-- <input type="text" value="{{$horario->idmedicohorario}}"> --}}
                   </div>
                 </td>
@@ -245,10 +245,10 @@
                         type="checkbox"
                         class="rounded border-blue-900 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       name="hora[]"
-                      value="{{$horario->idhorario}}:{{$horario->iddia}}"
+                      value=""
                       {{-- checked="{{($horario->estado =='activo'?'checked':'')}}" --}}
                       />
-                      {{$horario->idhorario}}:{{$horario->iddia}}
+                      
                       {{-- <input type="text" value="{{$horario->idmedicohorario}}"> --}}
                   </div>
                 </td>
@@ -258,10 +258,10 @@
                         type="checkbox"
                         class="rounded border-blue-900 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       name="hora[]"
-                      value="{{$horario->idhorario}}:{{$horario->iddia}}"
+                      value=""
                       {{-- checked="{{($horario->estado =='activo'?'checked':'')}}" --}}
                       />
-                      {{$horario->idhorario}}:{{$horario->iddia}}
+                      
                       {{-- <input type="text" value="{{$horario->idmedicohorario}}"> --}}
                   </div>
                 </td>
@@ -269,16 +269,16 @@
                   <div class="text-sm text-gray-900">Regional Paradigm Technician</div>
                   <div class="text-sm text-gray-500">Optimization</div>
                 </td>
-                {{-- <td class="p-2 whitespace-nowrap">
+                <td class="p-2 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     Active
                   </span>
                 </td>
-                 --}}
+                
               </tr>
               @endforeach
               {{-- @endforeach --}}
-              {{-- <tr>
+              <tr>
                 <td class="p-2 whitespace-nowrap">
                   <div class="flex items-center">
                     
@@ -1177,7 +1177,7 @@
                   <div class="text-sm text-gray-900">Regional Paradigm Technician</div>
                   <div class="text-sm text-gray-500">Optimization</div>
                 </td>
-              </tr> --}}
+              </tr>
               <!-- More items... -->
             </tbody>
           </table>
